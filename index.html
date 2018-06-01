@@ -46,6 +46,10 @@
     </head>
     <body data-spy="scroll" data-target=".navbar" data-offset="100">
 	<audio id="my_audio" src="song.ogg" loop="loop"></audio>
+	    <script>
+	 window.onload = function() {
+    document.getElementById("my_audio").play();
+	 } </script>
       <!--Nav bar fixed-top Start-->
     <nav class="navbar navbar-fixed-top">
         <div class="container-fluid">
@@ -211,10 +215,7 @@
         var mixer = mixitup('.mixitup');
     </script>
 
- <script>
-	 window.onload = function() {
-    document.getElementById("my_audio").play();
-	 } </script>
+ 
     
 
     <!--scroll up-->
