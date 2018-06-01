@@ -8,9 +8,6 @@
         <meta name="description" content="">
         <meta name="keywords" content="">
         <meta name="author" content="">
-	<audio controls autoplay>
-  <source src="song.ogg" type="audio/ogg">
-</audio>
         <!-- SITE TITLE -->
         <title>Happy Birthday!</title>
 
@@ -48,6 +45,7 @@
 		
     </head>
     <body data-spy="scroll" data-target=".navbar" data-offset="100">
+	<audio id="my_audio" src="song.ogg" loop="loop"></audio>
       <!--Nav bar fixed-top Start-->
     <nav class="navbar navbar-fixed-top">
         <div class="container-fluid">
@@ -213,7 +211,10 @@
         var mixer = mixitup('.mixitup');
     </script>
 
-
+ <script>
+	 window.onload = function() {
+    document.getElementById("my_audio").play();
+	 } </script>
     
 
     <!--scroll up-->
