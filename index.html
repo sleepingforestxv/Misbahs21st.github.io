@@ -45,11 +45,14 @@
 		
     </head>
     <body data-spy="scroll" data-target=".navbar" data-offset="100">
-	<audio id="my_audio" src="song.ogg" loop="loop"></audio>
-	    <script>
-	 window.onload = function() {
-    document.getElementById("my_audio").play();
-	 } </script>
+	<script>
+  function play(){
+       var audio = document.getElementById("audio");
+       audio.play();
+                 }
+   </script>
+	    
+<audio id="audio" src="song.ogg" ></audio>
       <!--Nav bar fixed-top Start-->
     <nav class="navbar navbar-fixed-top">
         <div class="container-fluid">
@@ -99,7 +102,7 @@
 
             <!--image-->
 			<div>
-            <img src="images/slider/slider.png" alt="banner image"></div>
+            <img src="images/slider/slider.png" alt="banner image" onclick="play()"></div>
             <h2></h2>
 
             <!--wedding date-->
